@@ -1,0 +1,309 @@
+$color1: #1F2326
+$color3: #FFFFFF
+$color4: #FF4656
+
+$slider1_borderradius: 15px
+
+%flex-blocks
+  display: flex
+  justify-content: space-between
+
+@import "main"
+
+.slider1
+  background: url("../img/bgr1.png") no-repeat
+  background-size: cover
+
+.slider1-window
+  padding: 10vh 10vw 9vh 10vw
+
+.slider1-window1
+  background-color: $color4
+  box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.5)
+  border-radius: $slider1_borderradius
+
+.slider1
+  header
+    @extend %flex-blocks
+    background-color: $color1
+    height: 8vh
+    border-top-left-radius: $slider1_borderradius
+    border-top-right-radius: $slider1_borderradius
+    padding: 1% 6%
+    box-sizing: border-box
+
+.slider1-logos
+  @extend %flex-blocks
+  width: 10%
+  margin: auto 0
+
+.slider1-menu-profile
+  @extend %flex-blocks
+  width: 85%
+  margin: auto 0
+
+.slider1-menu
+  width: 70%
+  margin: auto 0
+
+.slider1-menu
+  ul
+    @extend %flex-blocks
+
+.slider1-menu
+  li
+    display: inherit
+
+.slider1
+  li
+    a
+      color: $color3
+      text-decoration: none
+      font-size: 8px
+      font-family: Montserrat
+      text-transform: uppercase
+
+.slider1
+  li
+    a:hover
+      color: #D3D3D3
+
+
+.slider1-menu
+  .list3 a:after, .list5 a:after
+    content: "▼"
+    margin-left: 10px
+
+.slider1-profile
+  @extend %flex-blocks
+
+.slider1-profile
+  a
+    color: $color3
+    text-decoration: none
+    font-size: 8px
+    font-family: Montserrat
+    text-transform: uppercase
+    margin: auto 0
+
+.slider1-profile
+  a:hover
+    color: #D3D3D3
+
+
+.slider1-profile
+  a:after
+    content: "▼"
+    margin-left: 10px
+
+.slider1-profile
+  img
+    border-radius: 50%
+    margin: auto 10px auto 0
+
+.slider1-section1
+    height: 84vh
+    background: url("../img/background.png") no-repeat
+    background-size: cover
+
+.slider1-bbb
+  background: url("../img/elements.png") no-repeat 50% 20%
+  background-size: 95% 75%
+  width: inherit
+  height: inherit
+
+.slider1-content
+  margin-bottom: 8vh
+
+.slider1-text-player
+  @extend %flex-blocks
+  width: 102%
+  padding-top: 3vw
+
+/*.slider1-text-player
+  p
+    width: 20%*/
+.slider1-name
+  transform: rotate(90deg)
+  margin-top: -120px
+  margin-left: -200px
+
+.slider1-name
+  p
+    font-family: DrukWide
+    font-weight: 500
+    font-size: 55px
+    letter-spacing: 0.1em
+    width: 30vh
+    color: transparent !important
+    -webkit-text-stroke: 1px $color3
+    text-transform: uppercase
+
+.slider1-players
+  @extend %flex-blocks
+  width: 75%
+
+.slider1-player-bgr
+  background-color: $color1
+
+.slider1-player-bgr:hover
+  cursor: pointer
+  transform: scale(1.1)
+
+.js-bgr
+  background-color: $color3 !important
+  .slider1-abilities
+    background-color: $color3
+    border: 1px solid $color1
+  .slider1-player-text
+    .slider1-player-name
+      -webkit-text-stroke: 1px $color1
+  .slider1-abilities
+    img
+      filter: invert(1)
+
+.slider1-player
+  width: 13vw
+  height: 28vw
+  @extend %flex-blocks
+  flex-direction: column
+
+.slider1-player1
+  background: url("../img/art1.png") no-repeat
+  background-size: cover
+
+.slider1-player2
+  background: url("../img/art2.png") no-repeat
+  background-size: cover
+
+.slider1-player3
+  background: url("../img/art3.png") no-repeat
+  background-size: cover
+
+.slider1-player4
+  background: url("../img/art4.png") no-repeat
+  background-size: cover
+
+.slider1-payer-bottom
+  /*margin-top: 175%*/
+  width: 100%
+  margin-left: 8%
+
+.slider1-player-text
+  transform: rotate(90deg)
+  margin-right: 95%
+
+.slider1-player-text
+  .slider1-player-country
+    font-family: DrukWide
+    font-weight: 500
+    font-size: 10px
+    letter-spacing: 0.1em
+    color: $color4
+    width: 30vh
+
+.slider1-player-text
+  .slider1-player-name
+    font-family: DrukWide
+    font-weight: 500
+    font-size: 35px
+    letter-spacing: 0.1em
+    width: 30vh
+    color: transparent
+    -webkit-text-stroke: 1px $color3
+    text-transform: uppercase
+
+
+.slider1-abilities
+  border: 1px solid $color3
+  @extend %flex-blocks
+  background-color: $color1
+  padding: 2% 8%
+
+.slider1-abilities
+  img
+    margin: auto 0
+
+.slider1-abilities-more
+  @extend %flex-blocks
+  margin-left: -40px
+  justify-content: flex-start
+  display: none
+
+
+.slider1-ability
+  background-color: $color3
+  width: 20vw
+  height: 12vh
+  margin-right: 4vw
+  outline: 1px solid $color1
+
+.player1-ability, .player2-ability, .player3-ability, .player4-ability
+  display: none
+  height: inherit
+
+.player1-ability
+  @extend %flex-blocks
+
+.player1-ability-text
+  width: 45%
+  margin: auto
+
+.player1-ability-text
+  .inf
+    font-family: DrukWide
+    font-weight: 500
+    font-size: 15px
+    color: #C4C4C4
+    margin-bottom: 0.5vh
+    text-transform: uppercase
+
+.player1-ability-text
+  .title
+    font-family: DrukWide
+    font-weight: 500
+    font-size: 10px
+    color: #000000
+    margin-bottom: 0.5vh
+
+.player1-ability-text
+  .text
+    font-family: Montserrat
+    font-size: 6px
+    color: $color1
+
+.player1-ability-icon
+  width: 45%
+
+.player1-ability-icon
+  .icon-bgr
+    background: url("../img/abiliti1-1.png") no-repeat center
+    background-size: 48px 65px
+    height: inherit
+    width: 45%
+    filter: invert(1)
+
+
+.player1-ability-icon
+  img
+    filter: invert(1)
+    margin-top: 1vh
+    margin-left: 2vw
+    width: 55%
+    height: 90%
+
+.red-cube
+  background: $color4
+  position: absolute
+  width: 5vw
+  height: 8vh
+  bottom: 0
+
+
+
+.slider1
+  footer
+    height: 8vh
+    background-color: $color3
+    border-bottom-left-radius: $slider1_borderradius
+    border-bottom-right-radius: $slider1_borderradius
